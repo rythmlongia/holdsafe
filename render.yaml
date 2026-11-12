@@ -1,0 +1,22 @@
+# One-click deploy on Render (hackathon sponsor): https://render.com/deploy
+services:
+  - type: web
+    name: holdsafe
+    runtime: node
+    plan: free
+    buildCommand: "true"
+    startCommand: node server.js
+    healthCheckPath: /api/health
+    envVars:
+      - key: BASE_URL
+        sync: false   # set to https://<your-service>.onrender.com
+      - key: APP_SECRET
+        generateValue: true
+      - key: PAYPAL_CLIENT_ID
+        sync: false
+      - key: PAYPAL_CLIENT_SECRET
+        sync: false
+      - key: PAYPAL_WEBHOOK_ID
+        sync: false
+      - key: ANTHROPIC_API_KEY
+        sync: false

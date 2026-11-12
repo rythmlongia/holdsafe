@@ -1,0 +1,14 @@
+{
+  "name": "holdsafe",
+  "version": "1.0.0",
+  "description": "AI escrow agent on PayPal: funds are held with PayPal authorizations and released only after an AI verifies delivery against a contract.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "test": "node --test test/*.test.js"
+  },
+  "engines": { "node": ">=18.17" },
+  "license": "MIT",
+  "keywords": ["paypal", "escrow", "ai", "agent", "payments", "hackathon"]
+}

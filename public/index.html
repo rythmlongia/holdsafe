@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HoldSafe · AI escrow agent on PayPal</title>
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <header class="top">
+    <a class="brand" href="/">
+      <svg viewBox="0 0 32 32" width="28" height="28" aria-hidden="true"><rect x="5" y="13" width="22" height="16" rx="3" fill="currentColor"/><path d="M10 13V9a6 6 0 0 1 12 0v4" fill="none" stroke="currentColor" stroke-width="3"/><circle cx="16" cy="21" r="2.6" fill="var(--bg)"/></svg>
+      <span>HoldSafe</span>
+    </a>
+    <div class="badges" id="badges"></div>
+  </header>
+
+  <main id="app">
+    <p class="loading">Loading…</p>
+  </main>
+
+  <footer class="foot">
+    <span>Funds are held with PayPal <b>authorizations</b>, not moved, until delivery is verified.</span>
+    <span id="chain" class="chain"></span>
+  </footer>
+
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <script src="/app.js"></script>
+</body>
+</html>
